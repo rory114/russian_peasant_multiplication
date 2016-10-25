@@ -25,18 +25,15 @@ document.getElementById('perform_action').onclick = function () {
     col1.push(foo);
     col2.push(bar);
   }
-//  alert("col1: " + col1 + "\ncol2: " + col2);
+
 
   for(var i = 0; i < col1.length; i++)
   {
-  //  alert("inside for loop" + "\ni: " + i + "\ncol1[i]: " + col1[i] + "\ncol2[i]: " + col2[i] + "\ncol1.length: " + col1.length + "\ncol2.length: " + col2.length + "\ntotal: " + total + "\nsteps: " + steps);
     if(parseInt(col2[i]) % 2 != 0) {
       total = parseInt(total) + parseInt(col1[i]);
-  //    alert("inside 'if'" + "\ni: " + i + "\ncol1[i]: " + col1[i] + "\ncol2[i]: " + col2[i] + "\ncol1.length: " + col1.length + "\ncol2.length: " + col2.length + "\ntotal: " + total + "\nsteps: " + steps);
     } else {
       col1[i] = '<strike>' + col1[i] + '</strike>';
       col2[i] = '<strike>' + col2[i] + '</strike>';
-//      alert("inside 'else'" + "\ni: " + i + "\ncol1[i]: " + col1[i] + "\ncol2[i]: " + col2[i] + "\ncol1.length: " + col1.length + "\ncol2.length: " + col2.length + "\ntotal: " + total + "\nsteps: " + steps);
     }
   }
   for(var i = 0; i < col1.length; i++)  {
