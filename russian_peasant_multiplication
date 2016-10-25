@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Russian Peasant Multiplication</title>
+  </head>
+  <body>
+    <h1>Russian Peasant Multiplication</h1>
+    <p1>
+      Number 1:
+      <input type='text' id='num1'>
+      <br>Number 2:
+      <input type='text' id='num2'>
+      <br>
+      <input type='button' id='perform_action' value='Multiply'>
+      <input type='button' id='clear' value='Clear'>
+      <br>
+    </p1>
+    <p2 id='steps'></p2>
+    <p3 id='result'></p3>
+    <script src="russian_peasant_multiplication_java.js"></script>
+  </body>
+</html>
